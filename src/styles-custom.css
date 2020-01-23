@@ -1,0 +1,26 @@
+.hasError:not(:focus) {
+  border: 1px solid red;
+
+  animation-name: shake;
+  animation-duration: 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(2px);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+}
+
+.error {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
